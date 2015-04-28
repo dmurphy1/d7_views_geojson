@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Views GeoJSON Content and Views feature.
+ */
+
+include_once 'views_geojson_content_and_views.features.inc';
