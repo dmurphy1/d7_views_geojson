@@ -71,6 +71,15 @@ function views_geojson_content_and_views_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Custom: Bounding box */
+  $handler->display->display_options['arguments']['bbox_argument']['id'] = 'bbox_argument';
+  $handler->display->display_options['arguments']['bbox_argument']['table'] = 'views';
+  $handler->display->display_options['arguments']['bbox_argument']['field'] = 'bbox_argument';
+  $handler->display->display_options['arguments']['bbox_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['bbox_argument']['default_argument_type'] = 'querystring';
+  $handler->display->display_options['arguments']['bbox_argument']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['bbox_argument']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['bbox_argument']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
