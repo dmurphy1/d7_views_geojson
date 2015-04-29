@@ -19,7 +19,7 @@ This project has bowline installed, meaning you can quickly spin up a dev enviro
 * Setup the site:
  * `settings_init`
  * `drush si --sites-subdir=default`
- * `drush views_geojson, geofield, views_ui, views_geojson_content_and_views`
+ * `drush en views_geojson, geofield, views_ui, views_geojson_content_and_views`
  * Run `bowline` to get the site IP address.
 * Test it out:
  * Create a test article with location at `/node/add/article`
